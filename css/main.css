@@ -1,12 +1,11 @@
 body{
-    background: url('../img/home-bg.20160811.jpg');
     background-size: cover;
     margin: 0 auto;
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 1.72222;
     color: rgb(52, 73, 94);
-    background-color: rgb(255, 255, 255);
+    background-color: #2b2b2b;
 }
 
 p {
@@ -19,8 +18,8 @@ h1, h2, h3, h4, h5, h6{
     word-wrap: break-word;
 }
 
-.container{
-    margin: 10px auto;
+.content{
+    margin: 20px auto;
     padding: 0 20px 20px;
     background: #fff;
     border-radius: 5px;
@@ -69,4 +68,34 @@ h1, h2, h3, h4, h5, h6{
 
 .loading-panel button {
     width:100%;
+}
+
+.center-block{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* info list page*/
+.wrapper{
+    min-height: 960px;
+    padding: 25px 10px;
+}
+form#empForm, form#editForm {
+    padding: 0 35px 15px;
+}
+label.gender {
+    padding-top: 0 !important;
+}
+table tr th{
+    background: #f8f8f8;
+}
+.search-box {
+    padding-bottom: 0;
+}
+@media screen and (max-width: 368px){
+    .wrapper{
+        min-width: 340px;
+    }
 }

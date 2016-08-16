@@ -24,6 +24,7 @@ require.config({
         HomeController:'./js/home/controllers/homeController',
         SignInController:'./js/sign_in/controllers/sign_in',
         SignUpController:'./js/sign_up/controllers/sign_up',
+        InfoListController:'./js/info_list/controllers/info_list',
     },
 
     shim: {

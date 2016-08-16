@@ -14,13 +14,12 @@ class userController extends Controller
 {
     function __construct()
     {
+        parent::__construct();
         $this->default_login_interval = 600;
 
         $this->default_session_interval = 3600;
 
         $this->final_ts = 1800000000;
-        $this->cookies = $_COOKIE;
-        $this->input = $_REQUEST;
     }
 
     function _auth() {

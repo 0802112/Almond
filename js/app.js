@@ -16,6 +16,10 @@ define(['jquery', 'angular', 'ngRoute', 'ngAMD', 'ngCookies', 'notification', 'n
                         templateUrl: 'views/home/home.html',
                         controller: 'HomeController'
                     }))
+                    .when('/info_list', ngAMD.route({
+                        templateUrl: 'views/info_list/info_list.html',
+                        controller: 'InfoListController'
+                    }))
                     .when('/sign_in', ngAMD.route({
                         templateUrl: 'views/sign_in/sign_in.html',
                         controller: 'SignInController'
