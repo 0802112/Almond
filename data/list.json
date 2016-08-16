@@ -1,0 +1,33 @@
+{
+  "urls": [
+    {
+      "remark": "线索查询工具",
+      "url": "./#/qc",
+      "tag": "",
+      "level": "",
+      "sub-urls": []
+    },
+    {
+      "remark": "抓取监控工具",
+      "url": "./#/monitor_crawler",
+      "tag": "",
+      "level": "",
+      "sub-urls": []
+    },
+    {
+      "remark": "抓取过滤模块",
+      "url": "./#/car_info_filter",
+      "sub-urls": []
+    },
+    {
+      "remark": "user_agent工具",
+      "url": "./#/ua",
+      "sub-urls": []
+    },
+    {
+      "remark": "data_diff工具",
+      "url": "./#/data_diff",
+      "sub-urls": []
+    }
+  ]
+}

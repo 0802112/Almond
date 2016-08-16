@@ -1,0 +1,72 @@
+body{
+    background: url('../img/home-bg.20160811.jpg');
+    background-size: cover;
+    margin: 0 auto;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.72222;
+    color: rgb(52, 73, 94);
+    background-color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.72222;
+    margin: 0 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    word-wrap: break-word;
+}
+
+.container{
+    margin: 10px auto;
+    padding: 0 20px 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.hiding {
+    display: none;
+}
+
+/* 遮罩*/
+
+#loadingModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#000000;
+
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+
+    z-index: 1000;
+    display: none;
+}
+
+.loading-panel {
+    background: #000000;
+    width: 120px;
+    height: 50px;
+    margin: 100px auto 0;
+}
+.loading-panel p {
+    text-align: center;
+    color : #fff;
+}
+
+.loading-img {
+    background: url('/img/loading.gif');
+    width: 42px;
+    height: 43px;
+    margin:0 auto;
+}
+
+.loading-panel button {
+    width:100%;
+}

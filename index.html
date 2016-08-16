@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>IndexPage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img/favicon-128px.net.ico" />
+        <!-- icon url http://www.easyicon.net/1093957-Student_id_icon.html -->
+        <link rel="stylesheet" href="vendor/bootstrap-3.1.1/bootstrap.min.css" />
+        <link rel="stylesheet" href="vendor/bootstrap-3.1.1/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script data-main="main" src="vendor/requirejs-2.1.11/require.js"></script>
+    </head>
+    <body>
+        <div id="header" class="header">
+            <div class="row tool-bar">
+                <div class="logo">
+                    <a class="icon" href="/#/"></a>
+                </div>
+                <div class="login-status">
+                    <div class="">
+                        <a class="" href="/#/sign_in" id="signInBtn">Sign In</a>
+                        |
+                        <a class="" href="/#/sign_up" id="signUpBtn">Sign Up</a>
+                    </div>
+                    <div class="hiding">
+                        <a class="" href="/#/i"  id="currentUserName"></a>
+                        |
+                        <a href="javascript:;" id="logoutBtn">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header"></div>
+
+        <div class="container" ng-view></div>
+
+        <!-- 滚到顶部 -->
+        <div id="scrollToTop">
+            <a href="javascript:;" title="scroll to top">TOP</a>
+        </div>
+
+        <!-- 遮罩 -->
+        <div id="loadingModal">
+            <div class="loading-panel row">
+                <div class="loading-img"></div>
+                <p id="loadingModalText">查询中...</p>
+                <button onclick="__tools__.hideModal()">关闭</button>
+            </div>
+        </div>
+    </body>
+</html>

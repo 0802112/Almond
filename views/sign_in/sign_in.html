@@ -1,0 +1,49 @@
+<style>
+    .container {
+        width:400px;
+    }
+</style>
+<div class="row col-xs-12">
+    <h2>Sign in | For {{user.type||'Students'}}</h2>
+    <hr>
+</div>
+<div class="col-xs-12  col-lg-12 content"  ng-hide="if_login">
+
+    <div class="row cc-row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div class="form-group">
+                <input class="form-control" type="email" placeholder="Email Address" ng-model="user.email_addr" required>
+            </div>
+            <!--h1>{{user.email_addr}}</h1-->
+        </div>
+    </div>
+
+    <div class="row cc-row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div class="form-group">
+                <input class="form-control" type="password" placeholder="Password" ng-model="user.password" ng-minlength="6" required>
+            </div>
+            <!--h1>{{user.password}}</h1-->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <a class="btn btn-block btn-lg btn-primary" ng-click="loginProcess()">Login</a>
+        </div>
+
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <a class="btn btn-block btn-lg btn-info" href="/#/sign_up">Register</a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <a class="btn btn-block btn-lg btn-warning" href="/#/sign_in?t=teacher" ng-show="user.type=='student'">
+                Teachers try this</a>
+            <a class="btn btn-block btn-lg btn-warning" href="/#/sign_in?t=student" ng-show="user.type=='teacher'">
+                Students try this</a>
+        </div>
+    </div>
+</div>
